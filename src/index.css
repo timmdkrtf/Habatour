@@ -1,0 +1,925 @@
+body{
+  overflow-x: hidden;
+}
+
+.navbar{
+  font-family: "Montserrat", sans-serif;
+  padding: 15px 0;
+  box-shadow: 0 4px 4px #c4c4c4;
+}
+
+.navbar .ms-auto{
+  gap: 20px;
+}
+
+.navbar .ms-auto .nav-link{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* home */
+
+.home{
+  margin: 70px 0 50px 0;
+  padding: 50px 0;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), 
+                    url(../src/assets/img/bg-habatour/38.png);
+  background-size: 120%;
+  background-position: top left;
+  height: 620px;
+}
+
+.home::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53%; /* Menutupi setengah dari elemen di sebelah kiri */
+  height: 620px;
+  border-radius: 0 0 300px 0;
+  background-color: rgba(75,131,120,0.95); /* Warna putih dengan opacity 0.3 */
+  pointer-events: none; /* Supaya overlay tidak mengganggu interaksi elemen di bawahnya */
+}
+
+.home .content{
+  display: flex;
+  column-gap: 20px;
+}
+
+.home .content-text{
+  width: 55%;
+  padding: 50px 0;
+  position: relative;
+  z-index: 10 !important;
+}
+
+.home .content-text h1{
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.home .content-text span{
+  color: #FF9636 !important;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.home .content-text p{
+  opacity: 0.7;
+  width: 80%;
+  margin: 10px 0 50px 0;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home .content-text button{
+  border: none;
+  border-radius: 60px;
+  padding: 12px 30px;
+  background-color: #FF9636;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 17px;
+  box-shadow: 4px 4px 0px -1px rgba(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* About */
+.about{
+  padding: 100px 0 20px 0;
+  margin: 30px 0;
+}
+
+.about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.about .content .content-logo{
+  width: 45%;
+}
+
+.about .content .content-logo img{
+  width: 100%;
+}
+
+.about .content .content-text{
+  width: 45%;
+  padding: 50px 0;
+}
+
+.about .content-text .title h3{
+  padding: 10px 20px;
+  border-radius: 35px;
+  width: fit-content;
+  color: white;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color: #4B8378;
+  box-shadow: 5px 5px 0px -1px rgba(255,150,54,0.75);
+  margin: 0 0 40px 0;
+}
+
+
+.about .content-text p{
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.8;
+  width: 80%;
+}
+
+.service{
+  margin: 20px 0;
+  padding: 90px 0 30px 0;
+}
+
+.service .title{
+  text-align: center;
+  margin: 0 0 50px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.service .title h3{
+  display: inline-block;
+  position: relative;
+}
+
+.service .title h3::after{
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  height: 10px;
+  /* background-color: #4B8378; */
+  background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
+}
+
+.service .title span{
+  color: #4B8378;
+}
+
+.service .title p{
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.service .daftar-layanan{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service .daftar-layanan .card-layanan{
+  width: 23%;
+  border: 1px solid #ffe4cb;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px #4B8378;
+}
+
+.service .daftar-layanan .card-layanan img{
+  width: 60px;
+  margin: 0 0 20px 0;
+  filter: drop-shadow(2px 2px 0px #4B8378);
+}
+
+.service .daftar-layanan .card-layanan p{
+  margin: 0 0 0 0;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.offer{
+  margin: 80px 0;
+  padding: 80px 0 40px 0;
+}
+
+.offer .shape-container{
+  position: absolute;
+  width: 450px;
+  right: 0;
+  margin-top: 5px;
+}
+
+.offer .shape-container .shape1{
+  width: 100%;
+  height: 15px;
+  border-radius: 30px 0 0 30px;
+  background-color: #FF9636;
+  margin: 10px 0;
+}
+
+.offer .shape-container .shape2{
+  width: 80%;
+  height: 15px;
+  border-radius: 30px 0 0 30px;
+  background-color: #EDEDED;
+  margin: 0 0 0 auto;
+}
+
+.offer .title{
+  font-family: "Poppins", sans-serif;
+  padding: 15px 15px;
+  background-color: #4B8378;
+  color: #FFFFFF;
+  width: fit-content;
+  margin: 0 0 30px 0;
+  border-radius: 0 60px 60px 0;
+  box-shadow: 5px 5px 0px -1px rgba(255,150,54,0.75);
+}
+
+.offer .title h3{
+  margin: 0;
+  padding: 0 20px 0 100px;
+}
+
+.offer .content .popular-offer{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.offer .content .popular-offer .card-offer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.offer .content .popular-offer img{
+  width: 200px;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+ }
+
+ .offer .content .popular-offer .card-offer .image-container {
+  position: relative;
+  width: 32% !important;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.offer .content .popular-offer .card-offer .image-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.offer .content .popular-offer .card-offer .image-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+  color: #fff;
+  display: flex;
+  align-items: end;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: left;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.offer .content .popular-offer .card-offer .image-container:hover .overlay {
+  opacity: 1;
+}
+
+.offer .content .popular-offer .card-offer .image-container:hover img {
+  transform: scale(1.1);
+}
+
+.offer .content .popular-offer .card-offer .overlay .text-offer small {
+  display: block;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.offer .content .popular-offer .card-offer .overlay .text-offer h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+}
+.offer .content .popular-offer .card-offer .overlay .text-offer p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.6;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+.offer .content .popular-offer .card-offer .overlay .text-offer button {
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 12px 25px;
+  color: #FFFFFF;
+  font-weight: 600;
+  background-color: #FF9636;
+  box-shadow: 4px 4px 0px -1px #ffffff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer .content .popular-offer .card-offer .overlay .text-offer button:hover {
+  background-color: #e67e22; /* Darker shade for hover effect */
+}
+
+.modal.show .modal-dialog{
+  margin: 0 auto !important;
+  max-width: 70%;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-content{
+  width: 100%;
+  margin: 20px auto;
+}
+
+.modal-body{
+  padding: 30px 40px;
+}
+
+.modal-body .d-flex{
+  justify-content: space-between;
+}
+
+.modal-body .d-flex img{
+  width: 40%;
+  border-radius: 5px;
+}
+
+.modal-body .d-flex .text-image{
+  width: 55%;
+}
+
+#portfolio h2.fw-bold{
+  font-family: "Poppins", sans-serif;
+  align-self: center;
+  display: inline-block;
+  position: relative;
+}
+#portfolio h2.fw-bold::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 10px;
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
+}
+
+#portfolio h2 span{
+  color: #4B8378;
+}
+
+#portfolio p{
+  font-family: "Montserrat", sans-serif;
+}
+#portfolio a button{
+  font-family: "Montserrat", sans-serif;
+  background-color: #4B8378;
+  box-shadow: 3px 3px 0px 0px #FF9636;
+  color: white;
+}
+
+.slider-for {
+  width: 65%;
+  margin: 0 auto;
+  position: relative; /* Ensure that slider container is relative for absolute positioning */
+}
+
+.slider-nav {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.slider-for h4 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 100;
+  padding: 10px;
+}
+
+.slider-for h4::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1 !important;
+  height: 75%;
+  background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
+}
+
+.slider-for p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.slider-for button {
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+.slider-for .fw-bold.button-blur {
+  backdrop-filter: blur(4px) !important;
+  color: white;
+  background-color: rgba(229, 231, 235, 0.2) !important;
+}
+
+.slider-for .text-white.position-absolute {
+  margin: -130px 0 0 30px;
+}
+
+.slider-for .d-flex.gap-4 {
+  margin: 40px 0 0 0;
+}
+
+.slick-prev, .slick-next {
+  z-index: 10; /* Ensure navigation buttons are above the content */
+}
+
+.slick-prev, .slick-rtl .slick-prev {
+  color: rgb(255, 255, 255) !important;
+  background-color: #a1a1a1;
+  width: 30px !important;
+  height: 37px !important;
+  border-radius: 5px;
+  left: 5px !important;
+  opacity: 0.9 !important;
+  position: absolute; /* Ensure they are positioned absolutely */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical center */
+}
+
+.slick-next, .slick-rtl .slick-next {
+  color: rgb(255, 255, 255) !important;
+  background-color: #a1a1a1;
+  width: 30px !important;
+  height: 37px !important;
+  border-radius: 5px;
+  right: 20px !important;
+  opacity: 0.9 !important;
+  position: absolute; /* Ensure they are positioned absolutely */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical center */
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px !important;
+  font-weight: 800;
+}
+
+
+.footer{
+  background-color: #212529;
+  color: white;
+  padding: 30px 0 5px 0;
+}
+
+.footer .container .content {
+  display: flex;
+}
+
+.footer h4{
+  font-family: "Poppins", sans-serif;
+}
+
+.footer ul li{
+  opacity: 0.8;
+  font-size: 14px;
+  margin: 4px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer svg{
+  margin-right: 10px;
+}
+
+.footer p{
+  text-align: end;
+  opacity: 0.6;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .home .content-text{
+    padding: 30px 0;
+    width: 50%;
+  }
+
+  .home .content-text h1{
+    font-weight: 500;
+    font-size: 33px;
+  }
+
+  .about {
+    padding: 50px 0 20px 0;
+  }
+
+  .about .content-text p{
+    width: 100%;
+  }
+
+  .offer .shape-container{
+    width: 300px;
+  }
+
+  .slider-for {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .slider-nav {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+
+}
+
+@media screen and (max-width: 991px){
+  .home{
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height: 650px;
+  }
+
+  .home::after {
+    width: 60%;
+  }
+
+  .home .content-text{
+    width: 65%;
+  }
+
+  .about .content-text p{
+    font-size: 15px;
+  }
+
+  .service .daftar-layanan .card-layanan{
+    width: 31%;
+  }
+
+  .offer .title h3{
+    padding: 0 20px 0 70px;
+  }
+
+  .offer .content .popular-offer .card-offer .image-container {
+    position: relative;
+    width: 48% !important;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .modal.show .modal-dialog{
+    max-width: 90%;
+  }
+
+  .slider-for {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slider-nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  .home {
+    overflow: hidden;
+    height: auto;
+    background-size: 170%;
+    background-position: top center;
+  }
+
+  .home::after{
+    width: 100%;
+    height: 577px;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: linear-gradient(to top left, rgba(255,0,0,0), rgba(75,131,120,0.8), rgba(75,131,120,1));
+  }
+
+  .home .content-text{
+    width: 100%;
+  }
+
+  .about .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about .content .content-logo{
+    width: 100%;
+  }
+
+  .about .content .content-logo img{
+    width: 30%;
+  }
+
+  .about .content .content-text{
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+
+  .service .daftar-layanan .card-layanan{
+    width: 28%;
+  }
+
+  .offer .shape-container{
+    width: 200px;
+  }
+
+  .offer .title h3{
+    font-size: 22px;
+  }
+
+  .offer .shape-container .shape1{
+    height: 10px;
+  }
+  .offer .shape-container .shape2{
+    height: 10px;
+  }
+
+  .offer .title h3{
+    margin: 0;
+    padding: 0 10px 0 20px;
+  }
+
+  .offer .content .popular-offer .card-offer .overlay .text-offer small {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .offer .content .popular-offer .card-offer .overlay .text-offer h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .offer .content .popular-offer .card-offer .overlay .text-offer p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .offer .content .popular-offer .card-offer .overlay .text-offer button {
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 8px 18px;
+    background-color: #FF9636;
+    box-shadow: 4px 4px 0px -1px #ffffff;
+    transition: background-color 0.3s ease;
+  }
+
+  .modal-body .d-flex img{
+    height: 100%;
+  }
+
+  .modal-body .d-flex .text-image small{
+    font-size: 12px;
+  }
+  .modal-body .d-flex .text-image h2{
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .modal-body .d-flex .text-image p{
+    font-size: 13px;
+  }
+
+  .slider-for {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .slider-nav {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .slider-for .text-white.position-absolute{
+    margin: -90px 0 0 30px;
+  }
+  
+  .slider-for .d-flex.gap-4{
+    margin: 20px 0 0 0;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .home {
+    background-size: 270%;
+    height: 550px;
+    margin-bottom: 0px;
+  }
+
+  .home::after{
+    height: 620px;
+  }
+
+  .home .content-text{
+    padding: 30px 0;
+  }
+
+  .home .content-text h1{
+    font-size: 28px;
+  }
+
+  .home .content-text p{
+    opacity: 0.8;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .about .content .content-text{
+    padding: 90px 0 130px 0;
+  }
+
+  .about .content .content-logo{
+    display: none;
+  }
+
+  .service .title p{
+    font-size: 13px;
+  }
+
+  .service .daftar-layanan{
+    gap: 20px;
+  }
+
+  .service .daftar-layanan .card-layanan{
+    width: 46%;
+  }
+
+  .offer .shape-container{
+    width: 200px;
+    margin-top: -80px;
+  }
+
+  .offer .content .popular-offer .card-offer .image-container {
+    width: 70% !important;
+  }
+
+  .modal-body{
+    padding: 20px 15px;
+  }
+
+  .modal-body .d-flex{
+    flex-direction: column-reverse;
+  }
+
+  .modal-body .d-flex img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-body .d-flex .text-image{
+    width: 100%;
+  }
+
+  .modal-body .d-flex .text-image small{
+    font-size: 11px;
+  }
+  .modal-body .d-flex .text-image h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .modal-body .d-flex .text-image p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .slider-for .text-white.position-absolute{
+    margin-left: 15px !important;
+  }
+
+  .slider-for h4{
+    font-size: 18px;
+  }
+  .slider-for h4::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1 !important;
+    height: 60%;
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255, 150, 54, 1));
+  }
+  
+  .slider-for button{
+    padding: 5px 14px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  .slider-for .text-white.position-absolute{
+    margin: -60px 0 0 30px;
+  }
+  
+  .slider-for .d-flex.gap-4{
+    margin: 10px 0 0 0;
+  }
+
+  .slider-for button{
+    padding: 5px 14px;
+    font-size: 12px;
+    border-radius: 30px;
+    border: none;
+  }
+  
+}
+
+@media screen and (max-width:380px){
+
+  .home {
+    background-size: 340%;
+    height: 550px;
+    margin-bottom: 0px;
+    background-position: top center;
+  }
+
+  .home .content-text{
+    padding: 0px 0;
+  }
+
+  .home .content-text h1{
+    font-size: 27px;
+  }
+
+  .home .content-text p{
+    margin: 10px 0 30px 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .about .content-text p{
+    font-size: 14px;
+  }
+
+  .service .daftar-layanan{
+    gap: 10px;
+  }
+
+  .service .daftar-layanan .card-layanan{
+    width: 48%;
+  }
+
+  .service .daftar-layanan .card-layanan img{
+    width: 50px;
+  }
+
+  .service .daftar-layanan .card-layanan p{
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .rounded-circle{
+    display: none;
+  }
+
+  .offer .content .popular-offer .card-offer .image-container {
+    width: 100% !important;
+  }
+
+  .slider-for h4{
+    margin: -30px 0 0 0 !important;
+  }
+
+  .slider-for .d-flex.gap-4{
+    margin-top: 5px;
+    gap: 10px !important;
+    height: fit-content;
+  }
+  
+}

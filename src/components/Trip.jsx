@@ -156,13 +156,6 @@ function Trip() {
                     Contact Us
                   </button>
                 </a>
-                <button
-                  onClick={() => handleOpenModal(slide)}
-                  className="fw-bold button-blur"
-                  style={{color:"black"}}
-                >
-                  See More
-                </button>
               </div>
             </div>
           </div>
@@ -178,7 +171,7 @@ function Trip() {
       </Slider>
 
       {/* Modal Bootstrap */}
-      <Modal show={openModal} onHide={() => setOpenModal(false)} centered>
+      {/* <Modal show={openModal} onHide={() => setOpenModal(false)} centered>
         <Modal.Header closeButton>
           <Modal.Title>{modalData.title}</Modal.Title>
         </Modal.Header>
@@ -190,7 +183,7 @@ function Trip() {
             Close
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
       </div>
     </section>
   );

@@ -2,11 +2,13 @@ import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import { Modal, Button } from "react-bootstrap";
 import { CiGlobe } from "react-icons/ci";
-import f1 from "../assets/img/bg-habatour/27.png";
-import f2 from "../assets/img/bg-habatour/28.png";
-import f3 from "../assets/img/bg-habatour/29.png";
-import f4 from "../assets/img/bg-habatour/30.png";
-import f5 from "../assets/img/bg-habatour/31.png";
+import day1Cover from "../assets/img/documentation/day1/cover.jpg";
+import day2Cover from "../assets/img/documentation/day2/cover.jpg";
+import day3Cover from "../assets/img/documentation/day3/cover.png";
+import day4Cover from "../assets/img/documentation/day4/cover.png";
+import day5Cover from "../assets/img/documentation/day5/cover.png";
+import day6Cover from "../assets/img/documentation/day6/cover.png";
+import day7Cover from "../assets/img/documentation/day7/cover.jpg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,33 +29,45 @@ function Trip() {
 
   const slides = [
     {
-      mainTitle: "Trip ke 1",
-      img: f1,
-      title: "01 | Trip ke 1",
+      mainTitle: "Trip Day 1",
+      img: day1Cover,
+      title: "01 | Trip ziarah Bali-Lombok ke 1",
       description: "Trip 1",
     },
     {
-      mainTitle: "Trip ke 2",
-      img: f2,
-      title: "02 | Trip ke 2",
+      mainTitle: "Trip Day 2",
+      img: day2Cover,
+      title: "02 | Trip ziarah Bali-Lombok ke 2",
       description: "Trip 2",
     },
     {
-      mainTitle: "Trip ke 3",
-      img: f3,
-      title: "03 | Trip ke 3",
+      mainTitle: "Trip Day 3",
+      img: day3Cover,
+      title: "03 | Trip ziarah Bali-Lombok ke 3",
       description: "Trip 3",
     },
     {
-      mainTitle: "Trip ke 4",
-      img: f4,
-      title: "04 | Trip ke 4",
+      mainTitle: "Trip Day 4",
+      img: day4Cover,
+      title: "04 | Trip ziarah Bali-Lombok ke 4",
       description: "Trip 4",
     },
     {
-      mainTitle: "Trip ke 5",
-      img: f5,
-      title: "05 | Trip ke 5",
+      mainTitle: "Trip Day 5",
+      img: day5Cover,
+      title: "05 | Trip ziarah Bali-Lombok ke 5",
+      description: "Trip 5",
+    },
+    {
+      mainTitle: "Trip Day 6",
+      img: day6Cover,
+      title: "06 | Trip ziarah Bali-Lombok ke 6",
+      description: "Trip 4",
+    },
+    {
+      mainTitle: "Trip ke 7",
+      img: day7Cover,
+      title: "07 | Trip ziarah Bali-Lombok ke 7",
       description: "Trip 5",
     },
   ];

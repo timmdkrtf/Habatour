@@ -21,8 +21,8 @@ const Footer = () => {
                 <a href="" className="text-white text-decoration-none">+62 251 8632 170</a>
               </div>
               <div className="d-flex align-items-center">
-                <MdOutlinePhone className="me-2" />
-                <a href="mailto:contact@mdkrtf.co.id" className="text-white text-decoration-none">contact@mdkrtf.co.id</a>
+                <FaSquareInstagram className="me-2" />
+                <a href="https://instagram.com/habatour.co.id" target="_blank" className="text-white text-decoration-none">Habatour.co.id</a>
               </div>
             </div>
           </Col>

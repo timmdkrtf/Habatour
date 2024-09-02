@@ -30,31 +30,31 @@ function Trip() {
       mainTitle: "Trip ke 1",
       img: f1,
       title: "01 | Trip ke 1",
-      description: "Jejak kebaikan Thamrin Meyer Foundation dalam lensa mdkrtf.",
+      description: "Trip 1",
     },
     {
       mainTitle: "Trip ke 2",
       img: f2,
       title: "02 | Trip ke 2",
-      description: "Jejak kebaikan Thamrin Meyer Foundation dalam lensa mdkrtf.",
+      description: "Trip 2",
     },
     {
       mainTitle: "Trip ke 3",
       img: f3,
       title: "03 | Trip ke 3",
-      description: "Jejak kebaikan Thamrin Meyer Foundation dalam lensa mdkrtf.",
+      description: "Trip 3",
     },
     {
       mainTitle: "Trip ke 4",
       img: f4,
       title: "04 | Trip ke 4",
-      description: "Jejak kebaikan Thamrin Meyer Foundation dalam lensa mdkrtf.",
+      description: "Trip 4",
     },
     {
       mainTitle: "Trip ke 5",
       img: f5,
       title: "05 | Trip ke 5",
-      description: "Jejak kebaikan Thamrin Meyer Foundation dalam lensa mdkrtf.",
+      description: "Trip 5",
     },
   ];
 

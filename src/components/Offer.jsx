@@ -57,17 +57,6 @@ function Offer(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="image-container">
-                                <img src={FlyerTravel} alt="" />
-                                <div className="overlay">
-                                    <div className="text-offer">
-                                        <small>Kuota Terbatas</small>
-                                        <h2>Paket Ziarah Banten</h2>
-                                        <p>Lakukan Perjalanan penuh makna ke Banten bareng Ust. Uki. Hanya 850 rb saja...</p>
-                                        <button>Baca Selengkapnya</button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

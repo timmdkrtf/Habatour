@@ -128,7 +128,7 @@ function Trip() {
       <div className="container">
       <div className="row w-100 py-5">
         <div className="col-12 col-md-4 col-sm-12">
-          <h2 className="fw-bold">Our <span>Trip</span></h2>
+          <h2 className="fw-bold">Perjalanan <span>Kami</span></h2>
         </div>
         <div className="col-12 col-md-4 col-sm-12">
           <p>
@@ -151,7 +151,7 @@ function Trip() {
             <div className="text-white position-absolute">
               <h4 style={{margin:"-40px 0 0 0"}}>{slide.mainTitle}</h4>
               <div className="d-flex gap-4">
-                <a href="https://instagram.com/mdkrtf" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=6281213779357" target="_blank" rel="noopener noreferrer">
                   <button className="btn btn-light fw-bold">
                     Contact Us
                   </button>

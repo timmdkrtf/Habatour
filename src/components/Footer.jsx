@@ -18,7 +18,7 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-center mb-2">
                 <IoLogoWhatsapp className="me-2" />
-                <a href="" className="text-white text-decoration-none">+62 251 8632 170</a>
+                <a href="" className="text-white text-decoration-none">+62 812 1377 9357</a>
               </div>
               <div className="d-flex align-items-center">
                 <FaSquareInstagram className="me-2" />

@@ -53,7 +53,10 @@ function Offer(){
                                         <small>Kuota Terbatas</small>
                                         <h2>Paket Ziarah Banten</h2>
                                         <p>Lakukan Perjalanan penuh makna ke Banten bareng Ust. Uki. Hanya 850 rb saja...</p>
-                                        <Button onClick={handleShow}>Baca Selengkapnya</Button>
+                                        <div className="d-flex">
+                                            <Button onClick={handleShow}>Lihat detail</Button>
+                                            <a href="https://api.whatsapp.com/send?phone=6281213779357" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

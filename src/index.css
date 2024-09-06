@@ -421,14 +421,17 @@ body{
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 30px;
-  text-shadow: 2px 2px 0px #000000, -1px -1px 0px #F56E12;
+  text-shadow: 2px 2px 0px #000000, -1px -1px 0px #FF9636;
   position: relative;
   z-index: 100;
-  padding: 10px;
 }
 
 .slider-for p{
     font-family: "Montserrat", sans-serif;
+    margin: 15px 0 0 0;
+    text-shadow: 4px 4px 10px #000000, -4px -4px 10px #000000;
+    z-index: 100 !important;
+    display: inline-block;
 }
 
 .slider-for button {
@@ -436,12 +439,6 @@ body{
   border-radius: 30px;
   font-family: "Montserrat", sans-serif;
   border: none;
-}
-
-.slider-for .fw-bold.button-blur {
-  backdrop-filter: blur(4px) !important;
-  color: white;
-  background-color: rgba(229, 231, 235, 0.2) !important;
 }
 
 .slider-for .text-white.position-absolute {
@@ -833,7 +830,12 @@ body{
   }
   
   .slider-for .text-white.position-absolute{
-    margin: -40px 0 0 30px;
+    margin: -35px 0 0 30px;
+  }
+
+  .slider-for p{
+    font-size: 13px;
+    margin: 0px 0 0 0;
   }
   
   .slider-for .d-flex.gap-4{
@@ -904,6 +906,15 @@ body{
 
   .slider-for h4{
     margin: -30px 0 0 0 !important;
+  }
+
+  .slider-for .text-white.position-absolute{
+    margin: -40px 0 0 30px;
+  }
+
+  .slider-for p{
+    font-size: 12px;
+    margin: 0px 0 0 0;
   }
 
   .slider-for .d-flex.gap-4{

@@ -1,21 +1,17 @@
 import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
-import { Modal, Button } from "react-bootstrap";
 import { CiGlobe } from "react-icons/ci";
 import day1Cover from "../assets/img/documentation/day1/cover.jpg";
 import day2Cover from "../assets/img/documentation/day2/cover.jpg";
-import day3Cover from "../assets/img/documentation/day3/cover.png";
+import day3Cover from "../assets/img/documentation/day3/cover.jpg";
 import day4Cover from "../assets/img/documentation/day4/cover.png";
 import day5Cover from "../assets/img/documentation/day5/cover.png";
 import day6Cover from "../assets/img/documentation/day6/cover.png";
-import day7Cover from "../assets/img/documentation/day7/cover.jpg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Trip() {
-  const [openModal, setOpenModal] = useState(false);
-  const [modalData, setModalData] = useState({ title: "", description: "" });
   const sliderForRef = useRef(null);
   const sliderNavRef = useRef(null);
 
@@ -31,44 +27,32 @@ function Trip() {
     {
       mainTitle: "Trip Day 1",
       img: day1Cover,
-      title: "01 | Trip ziarah Bali-Lombok ke 1",
-      description: "Trip 1",
+      desc: "Makam Sunan Gunung Jati, Cirebon"
     },
     {
       mainTitle: "Trip Day 2",
       img: day2Cover,
-      title: "02 | Trip ziarah Bali-Lombok ke 2",
-      description: "Trip 2",
+      desc: "Makam Syekh Kholil Bangkalan, Madura"
     },
     {
       mainTitle: "Trip Day 3",
       img: day3Cover,
-      title: "03 | Trip ziarah Bali-Lombok ke 3",
-      description: "Trip 3",
+      desc: "Masjid Al-Hidayah"
     },
     {
       mainTitle: "Trip Day 4",
       img: day4Cover,
-      title: "04 | Trip ziarah Bali-Lombok ke 4",
-      description: "Trip 4",
+      desc: "Makam Syekh Haji Mukmin, Denpasar"
     },
     {
       mainTitle: "Trip Day 5",
       img: day5Cover,
-      title: "05 | Trip ziarah Bali-Lombok ke 5",
-      description: "Trip 5",
+      desc: "Makam Tuan Guru Ibrahim"
     },
     {
       mainTitle: "Trip Day 6",
       img: day6Cover,
-      title: "06 | Trip ziarah Bali-Lombok ke 6",
-      description: "Trip 4",
-    },
-    {
-      mainTitle: "Trip ke 7",
-      img: day7Cover,
-      title: "07 | Trip ziarah Bali-Lombok ke 7",
-      description: "Trip 5",
+      desc: "Makam Batu Layar, Lombok"
     },
   ];
 
@@ -150,6 +134,7 @@ function Trip() {
             <CiGlobe className="position-absolute top-0 start-0 m-4 bg-white p-2 rounded-circle" size={48} />
             <div className="text-white position-absolute">
               <h4 style={{margin:"-40px 0 0 0"}}>{slide.mainTitle}</h4>
+              <p>{slide.desc}</p>
             </div>
           </div>
         ))}

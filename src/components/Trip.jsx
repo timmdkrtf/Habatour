@@ -17,44 +17,87 @@ function Trip() {
 
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
+  const [activeSlide, setActiveSlide] = useState('ziarah');
+
+  const ziarahRef = useRef(null);
 
   useEffect(() => {
     setNav1(sliderForRef.current);
     setNav2(sliderNavRef.current);
   }, []);
 
-  const slides = [
-    {
-      mainTitle: "Trip Day 1",
-      img: day1Cover,
-      desc: "Makam Sunan Gunung Jati, Cirebon"
-    },
-    {
-      mainTitle: "Trip Day 2",
-      img: day2Cover,
-      desc: "Makam Syekh Kholil Bangkalan, Madura"
-    },
-    {
-      mainTitle: "Trip Day 3",
-      img: day3Cover,
-      desc: "Masjid Al-Hidayah"
-    },
-    {
-      mainTitle: "Trip Day 4",
-      img: day4Cover,
-      desc: "Makam Syekh Haji Mukmin, Denpasar"
-    },
-    {
-      mainTitle: "Trip Day 5",
-      img: day5Cover,
-      desc: "Makam Tuan Guru Ibrahim"
-    },
-    {
-      mainTitle: "Trip Day 6",
-      img: day6Cover,
-      desc: "Makam Batu Layar, Lombok"
-    },
-  ];
+  useEffect(() => {
+    if (ziarahRef.current) {
+      ziarahRef.current.focus();
+    }
+  }, []);
+
+  const slides = {
+    'ziarah':[
+      {
+        mainTitle: "Trip Day 1",
+        img: day1Cover,
+        desc: "Makam Sunan Gunung Jati, Cirebon"
+      },
+      {
+        mainTitle: "Trip Day 2",
+        img: day2Cover,
+        desc: "Makam Syekh Kholil Bangkalan, Madura"
+      },
+      {
+        mainTitle: "Trip Day 3",
+        img: day3Cover,
+        desc: "Masjid Al-Hidayah"
+      },
+      {
+        mainTitle: "Trip Day 4",
+        img: day4Cover,
+        desc: "Makam Syekh Haji Mukmin, Denpasar"
+      },
+      {
+        mainTitle: "Trip Day 5",
+        img: day5Cover,
+        desc: "Makam Tuan Guru Ibrahim"
+      },
+      {
+        mainTitle: "Trip Day 6",
+        img: day6Cover,
+        desc: "Makam Batu Layar, Lombok"
+      },
+    ],
+    'umroh':[
+      {
+        mainTitle: "Trip Day 1",
+        img: day1Cover,
+        desc: "Makam Sunan Gunung Jati, Cirebon"
+      },
+      {
+        mainTitle: "Trip Day 2",
+        img: day2Cover,
+        desc: "Makam Syekh Kholil Bangkalan, Madura"
+      },
+      {
+        mainTitle: "Trip Day 3",
+        img: day3Cover,
+        desc: "Masjid Al-Hidayah"
+      },
+      {
+        mainTitle: "Trip Day 4",
+        img: day4Cover,
+        desc: "Makam Syekh Haji Mukmin, Denpasar"
+      },
+      {
+        mainTitle: "Trip Day 5",
+        img: day5Cover,
+        desc: "Makam Tuan Guru Ibrahim"
+      },
+      {
+        mainTitle: "Trip Day 6",
+        img: day6Cover,
+        desc: "Makam Batu Layar, Lombok"
+      },
+    ],
+  };
 
   const settingsFor = {
     slidesToShow: 1,
@@ -99,11 +142,6 @@ function Trip() {
     ],
   };
 
-  const handleOpenModal = (slide) => {
-    setModalData(slide);
-    setOpenModal(true);
-  };
-
   return (
     <section
       id="portfolio"
@@ -127,8 +165,26 @@ function Trip() {
         </div>
       </div>
 
+      <div className="filter">
+          <div className="button-filter">
+            <button 
+              ref={ziarahRef}
+              className={activeSlide === 'ziarah' ? 'active' : ''}
+              onClick={() => setActiveSlide('ziarah')}
+            >
+              Ziarah
+            </button>
+            <button 
+              className={activeSlide === 'umroh' ? 'active' : ''}
+              onClick={() => setActiveSlide('umroh')}
+            >
+              Umroh
+            </button>
+          </div>
+        </div>
+
       <Slider {...settingsFor} className="slider-for">
-        {slides.map((slide, index) => (
+        {slides[activeSlide].map((slide, index) => (
           <div key={index} className="image-wrapper position-relative">
             <img src={slide.img} alt="slide" className="img-fluid rounded w-100" />
             <CiGlobe className="position-absolute top-0 start-0 m-4 bg-white p-2 rounded-circle" size={48} />
@@ -141,7 +197,7 @@ function Trip() {
       </Slider>
 
       <Slider {...settingsNav} className="slider-nav mt-4 pt-3">
-        {slides.map((slide, index) => (
+        {slides[activeSlide].map((slide, index) => (
           <div key={index} className="px-2">
             <img src={slide.img} alt="thumbnail" className="img-fluid rounded" />
           </div>

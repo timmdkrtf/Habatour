@@ -2,7 +2,6 @@ import { FaMapMarked} from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import logoHabatour from "../assets/img/1. Habatour Logo Utama (P).png";
-import { MdOutlinePhone } from "react-icons/md";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 
 const Footer = () => {

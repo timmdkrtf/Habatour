@@ -7,12 +7,13 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-dark text-white py-4">
+    <footer id="contact" className="text-white py-4">
       <Container>
         <Row className="justify-content-between align-items-center">
           <Col md={6} className="py-4">
-            <img src={logoHabatour} className="w-25" alt="MDKRTF Logo" />
-            <div className="mt-3">
+            <img src={logoHabatour} className="w-25" alt="MDKRTF Logo" /><br />
+            <small style={{opacity:"0.7", fontSize:"11px"}}>by PT Abdi Sarana Wisata</small>
+            <div className="mt-3 opacity-75">
               <div className="mb-2">
                 Jl. Aria Surialaga No.83, Kota Bogor
               </div>
@@ -26,7 +27,7 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col md={6} className="text-center text-md-end">
+          <Col md={6} className="text-center text-md-end opacity-75">
             <Nav className="justify-content-center justify-content-md-end mb-3">
               <Nav.Link target="_blank" href="https://maps.app.goo.gl/j62wQTYNX8QaPhY58" className="text-white fs-3 me-1">
                 <FaMapMarked />

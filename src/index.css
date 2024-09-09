@@ -17,6 +17,41 @@ body{
   font-weight: 600;
 }
 
+.navbar .ms-auto .nav-link{
+  padding: 8px 10px;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+color: #274416;
+font-weight: 600;
+}
+
+.nav-link:focus:after,
+.nav-link:hover:after {
+width: 100%;
+left: 0%;
+}
+
+.nav-link:after {
+content: "";
+pointer-events: none;
+bottom: -2px;
+left: 50%;
+position: absolute;
+width: 0%;
+height: 2px;
+background-color: #274416;
+transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+transition-duration: 400ms;
+transition-property: width, left;
+}
+
 /* home */
 
 .home{

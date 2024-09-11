@@ -8,6 +8,12 @@ import day4Cover from "../assets/img/documentation/day4/cover.png";
 import day5Cover from "../assets/img/documentation/day5/cover.png";
 import day6Cover from "../assets/img/documentation/day6/cover.png";
 
+import umroh1 from "../assets/img/documentation/umroh/makkah1.png"
+import umroh2 from "../assets/img/documentation/umroh/makkah2.png"
+import umroh3 from "../assets/img/documentation/umroh/shalat.png"
+import umroh4 from "../assets/img/documentation/umroh/trip-umroh1.png"
+import umroh5 from "../assets/img/documentation/umroh/trip-umroh2.png"
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -67,34 +73,29 @@ function Trip() {
     ],
     'umroh':[
       {
-        mainTitle: "Trip Day 1",
-        img: day1Cover,
-        desc: "Makam Sunan Gunung Jati, Cirebon"
+        mainTitle: "Lengkapi ibadahmu",
+        img: umroh1,
+        desc: "Lengkapi ibadahmu dengan umroh"
       },
       {
-        mainTitle: "Trip Day 2",
-        img: day2Cover,
-        desc: "Makam Syekh Kholil Bangkalan, Madura"
+        mainTitle: "Pengalaman di tanah suci",
+        img: umroh2,
+        desc: "Rasakan pengalaman ibadah anda di tanah suci"
       },
       {
-        mainTitle: "Trip Day 3",
-        img: day3Cover,
-        desc: "Masjid Al-Hidayah"
+        mainTitle: "Tingkatkan Shalat",
+        img: umroh3,
+        desc: "Rasakan pengalaman ibadah di tanah suci"
       },
       {
-        mainTitle: "Trip Day 4",
-        img: day4Cover,
-        desc: "Makam Syekh Haji Mukmin, Denpasar"
+        mainTitle: "Kunjungi tempat otentik di tanah suci",
+        img: umroh4,
+        desc:"Kunjungi tempat otentik di tanah suci"
       },
       {
-        mainTitle: "Trip Day 5",
-        img: day5Cover,
-        desc: "Makam Tuan Guru Ibrahim"
-      },
-      {
-        mainTitle: "Trip Day 6",
-        img: day6Cover,
-        desc: "Makam Batu Layar, Lombok"
+        mainTitle: "Kunjungi masjid di tanah suci",
+        img: umroh5,
+        desc:"Kunjungi masjid di tanah suci"
       },
     ],
   };

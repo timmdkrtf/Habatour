@@ -34,7 +34,7 @@ function Trip() {
 
   useEffect(() => {
     if (ziarahRef.current) {
-      ziarahRef.current.focus();
+      // ziarahRef.current.focus();
     }
   }, []);
 

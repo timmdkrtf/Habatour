@@ -613,6 +613,10 @@ footer p{
   font-family: "Montserrat", sans-serif;
 }
 
+footer .text-center p{
+  font-size: 14px;
+}
+
 @media screen and (max-width: 1200px) {
   .home .content-text{
     padding: 30px 0;
@@ -1017,6 +1021,10 @@ footer p{
     margin-top: 5px;
     gap: 10px !important;
     height: fit-content;
+  }
+
+  footer .text-center p{
+    font-size: 11px;
   }
   
 }

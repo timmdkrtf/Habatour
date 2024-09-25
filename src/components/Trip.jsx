@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
-import { CiGlobe } from "react-icons/ci";
 import day1Cover from "../assets/img/documentation/day1/cover.jpg";
 import day2Cover from "../assets/img/documentation/day2/cover.jpg";
 import day3Cover from "../assets/img/documentation/day3/cover.jpg";
@@ -188,7 +187,6 @@ function Trip() {
         {slides[activeSlide].map((slide, index) => (
           <div key={index} className="image-wrapper position-relative">
             <img src={slide.img} alt="slide" className="img-fluid rounded w-100" />
-            <CiGlobe className="position-absolute top-0 start-0 m-4 bg-white p-2 rounded-circle" size={48} />
             <div className="text-white position-absolute">
               <h4 style={{margin:"-40px 0 0 0"}}>{slide.mainTitle}</h4>
               <p>{slide.desc}</p>

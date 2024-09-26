@@ -1,5 +1,6 @@
 import logoHabatour from "../assets/img/1. Habatour Logo Utama (P).png"
-import elemenTriangleGreen from "../assets/img/elemen/triangle-orange-right.png"
+import elemenTriangleGreen from "../assets/img/elemen/triangle-green-right.png"
+import elemenTriangleOrange from "../assets/img/elemen/triangle-orange-right.png"
 
 function About(){
     return(

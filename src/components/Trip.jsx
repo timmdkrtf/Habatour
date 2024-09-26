@@ -13,6 +13,9 @@ import umroh3 from "../assets/img/documentation/umroh/shalat.png"
 import umroh4 from "../assets/img/documentation/umroh/trip-umroh1.png"
 import umroh5 from "../assets/img/documentation/umroh/trip-umroh2.png"
 
+import elemenTriangleGreen from "../assets/img/elemen/triangle-green-left.png"
+import elemenTriangleOrange from "../assets/img/elemen/triangle-orange-left.png"
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -127,13 +130,13 @@ function Trip() {
     ref: sliderNavRef,
     responsive: [
       {
-        breakpoint: 768, // Pada layar dengan lebar 768px atau kurang
+        breakpoint: 768,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 400, // Pada layar dengan lebar 768px atau kurang
+        breakpoint: 400,
         settings: {
           arrows: false,
           slidesToShow: 2.3,
@@ -174,7 +177,7 @@ function Trip() {
             >
               Ziarah
             </button>
-            <button 
+            <button
               className={activeSlide === 'umroh' ? 'active' : ''}
               onClick={() => setActiveSlide('umroh')}
             >
@@ -202,6 +205,9 @@ function Trip() {
           </div>
         ))}
       </Slider>
+      </div>
+      <div className="elemen-triangle">
+        <img src={elemenTriangleOrange} alt="" />
       </div>
     </section>
   );

@@ -69,11 +69,11 @@ transition-property: width, left;
   position: absolute;
   top: 0;
   left: 0;
-  width: 53%; /* Menutupi setengah dari elemen di sebelah kiri */
+  width: 53%;
   height: 620px;
   border-radius: 0 0 300px 0;
-  background-color: rgba(75,131,120,0.95); /* Warna putih dengan opacity 0.3 */
-  pointer-events: none; /* Supaya overlay tidak mengganggu interaksi elemen di bawahnya */
+  background-color: rgba(75,131,120,0.95);
+  pointer-events: none;
 }
 
 .home .content{
@@ -119,12 +119,29 @@ transition-property: width, left;
   font-size: 17px;
   box-shadow: 4px 4px 0px -1px rgba(255, 255, 255);
   font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
 }
+
+.home .content-text button:hover{
+  background-color: #FFFFFF;
+  color: #4B8378;
+  box-shadow: 0 5px 0px -1px #FF9636;
+}
+
 
 /* About */
 .about{
   padding: 100px 0 20px 0;
   margin: 30px 0;
+  position: relative;
+}
+
+.about .elemen-triangle img{
+  position: absolute;
+  right: 0;
+  width: 150px;
+  top: -50px;
+  z-index: -1;
 }
 
 .about .content {
@@ -158,7 +175,6 @@ transition-property: width, left;
   box-shadow: 5px 5px 0px -1px rgba(255,150,54,0.75);
   margin: 0 0 40px 0;
 }
-
 
 .about .content-text p{
   font-family: "Montserrat", sans-serif;
@@ -212,11 +228,16 @@ transition-property: width, left;
 
 .service .daftar-layanan .card-layanan{
   width: 23%;
-  border: 1px solid #ffe4cb;
   border-radius: 20px;
   padding: 15px;
   text-align: center;
   box-shadow: 0 2px 4px #4B8378;
+  transition: 0.3s;
+}
+
+.service .daftar-layanan .card-layanan:hover{
+  margin: -10px 0 0 0;
+  box-shadow: 0 4px 4px #4B8378;
 }
 
 .service .daftar-layanan .card-layanan img{
@@ -410,6 +431,14 @@ transition-property: width, left;
   width: 55%;
 }
 
+#portfolio .elemen-triangle img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  margin: -130px 0 0 0;
+  z-index: 0;
+}
 
 #portfolio h2.fw-bold{
   font-family: "Poppins", sans-serif;
@@ -435,11 +464,22 @@ transition-property: width, left;
 #portfolio p{
   font-family: "Montserrat", sans-serif;
 }
+
 #portfolio a button{
   font-family: "Montserrat", sans-serif;
   background-color: #4B8378;
   box-shadow: 3px 3px 0px 0px #FF9636;
   color: white;
+}
+
+#portfolio a button:hover{
+  background-color: #4B8378;
+  box-shadow: 0 4px 0px 0px #FF9636;
+  color: white;
+}
+
+.slick-slider{
+  z-index: 1;
 }
 
 
@@ -485,7 +525,7 @@ transition-property: width, left;
 .slider-for {
   width: 65%;
   margin: 0 auto;
-  position: relative; /* Ensure that slider container is relative for absolute positioning */
+  position: relative; 
 }
 
 .slider-nav {
@@ -654,9 +694,10 @@ footer .text-center p{
 
 @media screen and (max-width: 991px){
   .home{
-    background-size: 130%;
+    background-size: 150%;
     background-repeat: no-repeat;
     height: 650px;
+    background-position: top;
   }
 
   .home::after {

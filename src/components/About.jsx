@@ -1,8 +1,12 @@
 import logoHabatour from "../assets/img/1. Habatour Logo Utama (P).png"
+import elemenTriangleGreen from "../assets/img/elemen/triangle-orange-right.png"
 
 function About(){
     return(
         <div className="about" id="about">
+            <div className="elemen-triangle">
+                <img src={elemenTriangleGreen} alt="" />
+            </div>
             <div className="container">
                 <div className="content">
                     <div className="content-logo">

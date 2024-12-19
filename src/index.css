@@ -61,6 +61,7 @@ transition-property: width, left;
                     url(../src/assets/img/bg-habatour/38.png);
   background-size: 120%;
   background-position: top left;
+  background-repeat: no-repeat;
   height: 620px;
 }
 
@@ -301,12 +302,11 @@ transition-property: width, left;
   display: flex;
   flex-wrap: wrap;
   margin: 60px 0;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
 }
 
 .offer .content .popular-offer .card-offer{
-  width: 100%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -322,7 +322,7 @@ transition-property: width, left;
 
  .offer .content .popular-offer .card-offer .image-container {
   position: relative;
-  width: 32% !important;
+  width: 80% !important;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -330,7 +330,7 @@ transition-property: width, left;
 .offer .content .popular-offer .card-offer .image-container img {
   width: 100%;
   display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .offer .content .popular-offer .card-offer .image-container .overlay {
@@ -355,7 +355,8 @@ transition-property: width, left;
 }
 
 .offer .content .popular-offer .card-offer .image-container:hover img {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  margin: 30px 0 0 0;
 }
 
 .offer .content .popular-offer .card-offer .overlay .text-offer small {
@@ -720,9 +721,23 @@ footer .text-center p{
     padding: 0 20px 0 70px;
   }
 
+  .offer .content .popular-offer{
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .offer .content .popular-offer .card-offer{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
   .offer .content .popular-offer .card-offer .image-container {
     position: relative;
-    width: 48% !important;
+    width: 100% !important;
     overflow: hidden;
     border-radius: 10px;
   }
@@ -924,6 +939,14 @@ footer .text-center p{
 
   .offer .content .popular-offer .card-offer .image-container {
     width: 70% !important;
+  }
+
+  .offer .content .popular-offer .card-offer{
+    width: 90%;
+  }
+
+  .offer .content .popular-offer .card-offer .image-container {
+    width: 80% !important;
   }
 
   .modal-body{

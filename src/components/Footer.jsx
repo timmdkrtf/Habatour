@@ -36,13 +36,13 @@ const Footer = () => {
           <Col md={6} className="text-center text-md-end opacity-75">
             <Nav className="justify-content-center justify-content-md-end mb-3">
             <Nav.Link href="" className="text-white fs-3 me-1" target="_blank">
-                <FaFacebook />
+                <FaFacebook style={{margin:"0"}} />
               </Nav.Link>
               <Nav.Link href="https://www.tiktok.com/@habatour.co.id" className="text-white fs-3 me-1" target="_blank">
-                <FaTiktok />
+                <FaTiktok style={{margin:"0"}} />
               </Nav.Link>
               <Nav.Link href="https://instagram.com/habatour.co.id" className="text-white fs-3 me-1" target="_blank">
-                <BsInstagram />
+                <BsInstagram style={{margin:"0"}} />
               </Nav.Link>
             </Nav>
           </Col>

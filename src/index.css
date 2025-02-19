@@ -675,6 +675,14 @@ transition-property: width, left;
   filter: drop-shadow(1px 1px 0 #afafaf);
 }
 
+.aka img,
+.ask img {
+  width: 160px;
+  height: 140px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
 .slider-for button{
   padding: 10px 28px;
   border-radius: 30px;
@@ -726,7 +734,7 @@ transition-property: width, left;
 .swiper-slide {
   display: flex;
   text-align: center;
-  justify-content: center; /* Pusatkan konten dalam slide */
+  justify-content: center; 
 }
 
 .partners h2{
@@ -844,7 +852,13 @@ footer .text-center p{
     margin-top: 8px;
   }
 
-
+  .aka img,
+  .ask img {
+    width: 160px;
+    height: 140px;
+    object-fit: contain;
+    margin-top: 7px;
+  }
 }
 
 @media screen and (max-width: 991px){
@@ -1254,6 +1268,12 @@ footer .text-center p{
 
 .nyamanin img{
   margin-top: -0px;
+}
+
+.aka img,
+.ask img {
+  object-fit: contain;
+  margin-top: 7px;
 }
   
 }

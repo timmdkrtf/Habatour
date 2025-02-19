@@ -17,6 +17,8 @@ import BBS from "../assets/img/icon-clients/Logo BBS.png";
 import InKa from "../assets/img/icon-clients/logo-insan-kamil.png";
 import mdkrtf from "../assets/img/icon-clients/mdkrtf.png"
 import Majlis from "../assets/img/icon-clients/Logo 2.png"
+import ask from "../assets/img/icon-clients/ASK.png"
+import aka from "../assets/img/icon-clients/AKA.png"
 
 import elemenTriangleOrange from "../assets/img/elemen/triangle-orange-left.png"
 
@@ -98,6 +100,7 @@ const Client = () => {
                 <SwiperSlide className="apostrof"><img src={apostrof} alt="apostrof" /></SwiperSlide>
                 <SwiperSlide className="bahana"><img src={bahama} alt="bahana" /></SwiperSlide>
                 <SwiperSlide className="habatour"><img src={realtour} alt="realtour" /></SwiperSlide>
+                <SwiperSlide className="aka"><img src={aka} alt="aka" /></SwiperSlide>
                 <SwiperSlide className="halakah"><img src={halakah} alt="halakah" /></SwiperSlide>
                 <SwiperSlide className="kronika"><img src={kronika} alt="kronika" /></SwiperSlide>
                 <SwiperSlide className="nyamanin"><img src={nyamanin} alt="nyamanin" /></SwiperSlide>
@@ -107,6 +110,7 @@ const Client = () => {
                 <SwiperSlide className="TMC"><img src={TMC} alt="Thamrin Meyer Corporation" /></SwiperSlide>
                 <SwiperSlide className="InKa"><img src={InKa} alt="Insan Kamil" /></SwiperSlide>
                 <SwiperSlide className="TMF"><img src={TMF} alt="Thamrin Meyer Foundation" /></SwiperSlide>
+                <SwiperSlide className="ask"><img src={ask} alt="ask" /></SwiperSlide>
                 <SwiperSlide className="kronika"><img src={mdkrtf} alt="mdkrtf" /></SwiperSlide>
                 <SwiperSlide className="InKa"><img src={Majlis} alt="Majlis" /></SwiperSlide>
             </Swiper>

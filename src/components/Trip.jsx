@@ -206,9 +206,6 @@ function Trip() {
         ))}
       </Slider>
       </div>
-      <div className="elemen-triangle">
-        <img src={elemenTriangleOrange} alt="" />
-      </div>
     </section>
   );
 }

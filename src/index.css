@@ -780,30 +780,30 @@ footer .container .content {
   display: flex;
 }
 
-footer h4{
-  font-family: "Poppins", sans-serif;
-}
-
-footer ul li{
-  opacity: 0.8;
-  font-size: 14px;
-  margin: 4px 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-footer svg{
-  margin-right: 10px;
-}
-
-footer p{
-  text-align: end;
+footer .small{
+  color: white;
   opacity: 0.6;
-  font-size: 13px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
 }
 
-footer .text-center p{
-  font-size: 14px;
+footer h4{
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .mt-3 a{
+  font-family: "Open Sans", sans-serif;
+}
+
+/* footer svg{
+  margin-right: 10px;
+} */
+
+footer .text-end{
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0 -4px 0;
 }
 
 @media screen and (max-width: 1200px) {

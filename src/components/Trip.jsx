@@ -7,11 +7,22 @@ import day4Cover from "../assets/img/documentation/day4/cover.png";
 import day5Cover from "../assets/img/documentation/day5/cover.png";
 import day6Cover from "../assets/img/documentation/day6/cover.png";
 
+import ziarahBanten1 from "../assets/img/documentation/ziarah-banten/HBT (1) 1.png"
+import ziarahBanten2 from "../assets/img/documentation/ziarah-banten/HBT (2) 1.png"
+import ziarahBanten3 from "../assets/img/documentation/ziarah-banten/HBT (3) 1.png"
+import ziarahBanten4 from "../assets/img/documentation/ziarah-banten/HBT (4) 1.png"
+
+import ziarahMarhuman1 from "../assets/img/documentation/ziarah-marhuman/MDK02741 1.png"
+import ziarahMarhuman2 from "../assets/img/documentation/ziarah-marhuman/MDK02754 1.png"
+import ziarahMarhuman3 from "../assets/img/documentation/ziarah-marhuman/MDK02781 1.png"
+import ziarahMarhuman4 from "../assets/img/documentation/ziarah-marhuman/MDK02790 1.png"
+
 import umroh1 from "../assets/img/documentation/umroh/makkah1.png"
 import umroh2 from "../assets/img/documentation/umroh/makkah2.png"
 import umroh3 from "../assets/img/documentation/umroh/shalat.png"
 import umroh4 from "../assets/img/documentation/umroh/trip-umroh1.png"
 import umroh5 from "../assets/img/documentation/umroh/trip-umroh2.png"
+import umroh6 from "../assets/img/documentation/umroh/umroh-foto.png"
 
 import elemenTriangleGreen from "../assets/img/elemen/triangle-green-left.png"
 import elemenTriangleOrange from "../assets/img/elemen/triangle-orange-left.png"
@@ -43,37 +54,82 @@ function Trip() {
   const slides = {
     'ziarah':[
       {
-        mainTitle: "Trip Day 1",
+        mainTitle: "Ziarah Bali-Lombok",
         img: day1Cover,
-        desc: "Makam Sunan Gunung Jati, Cirebon"
+        desc: "Makam Sunan Gunung Jati, Cirebon (3-10 Juli 2024)"
       },
       {
-        mainTitle: "Trip Day 2",
+        mainTitle: "Ziarah Bali-Lombok",
         img: day2Cover,
-        desc: "Makam Syekh Kholil Bangkalan, Madura"
+        desc: "Makam Syekh Kholil Bangkalan, Madura (3-10 Juli 2024)"
       },
       {
-        mainTitle: "Trip Day 3",
+        mainTitle: "Ziarah Bali-Lombok",
         img: day3Cover,
-        desc: "Masjid Al-Hidayah"
+        desc: "Masjid Al-Hidayah (3-10 Juli 2024)"
       },
       {
-        mainTitle: "Trip Day 4",
+        mainTitle: "Ziarah Bali-Lombok",
         img: day4Cover,
-        desc: "Makam Syekh Haji Mukmin, Denpasar"
+        desc: "Makam Syekh Haji Mukmin, Denpasar (3-10 Juli 2024)"
       },
       {
-        mainTitle: "Trip Day 5",
+        mainTitle: "Ziarah Bali-Lombok",
         img: day5Cover,
-        desc: "Makam Tuan Guru Ibrahim"
+        desc: "Makam Tuan Guru Ibrahim (3-10 Juli 2024)"
       },
       {
-        mainTitle: "Trip Day 6",
+        mainTitle: "Ziarah Bali-Lombok",
         img: day6Cover,
-        desc: "Makam Batu Layar, Lombok"
+        desc: "Makam Batu Layar, Lombok (3-10 Juli 2024)"
+      },
+      {
+        mainTitle: "Ziarah Banten Bersama Ustaz Uki",
+        img: ziarahBanten1,
+        desc: "28-29 September 2024"
+      },
+      {
+        mainTitle: "Ziarah Banten Bersama Ustaz Uki",
+        img: ziarahBanten2,
+        desc: "28-29 September 2024"
+      },
+      {
+        mainTitle: "Ziarah Banten Bersama Ustaz Uki",
+        img: ziarahBanten3,
+        desc: "28-29 September 2024"
+      },
+      {
+        mainTitle: "Ziarah Banten Bersama Ustaz Uki",
+        img: ziarahBanten4,
+        desc: "28-29 September 2024"
+      },
+      {
+        mainTitle: "Ziarah Bil Barkah Jam’an Marhuman Indonesia",
+        img: ziarahMarhuman1,
+        desc: "Yogyakarta - Magelang (24-26 Januari 2025)"
+      },
+      {
+        mainTitle: "Ziarah Bil Barkah Jam’an Marhuman Indonesia",
+        img: ziarahMarhuman2,
+        desc: "Yogyakarta - Magelang (24-26 Januari 2025)"
+      },
+      {
+        mainTitle: "Ziarah Bil Barkah Jam’an Marhuman Indonesia",
+        img: ziarahMarhuman3,
+        desc: "Yogyakarta - Magelang (24-26 Januari 2025)"
+      },
+      {
+        mainTitle: "Ziarah Bil Barkah Jam’an Marhuman Indonesia",
+        img: ziarahMarhuman4,
+        desc: "Yogyakarta - Magelang (24-26 Januari 2025)"
       },
     ],
     'umroh':[
+      {
+        mainTitle: "Coming Soon 2025",
+        img: umroh6,
+        desc: ""
+      },
       {
         mainTitle: "Lengkapi ibadahmu",
         img: umroh1,
@@ -112,9 +168,10 @@ function Trip() {
     ref: sliderForRef,
     responsive: [
       {
-        breakpoint: 576, // Pada layar dengan lebar 768px atau kurang
+        breakpoint: 576,
         settings: {
           arrows: false,
+          dots: false,
         },
       }
     ],
@@ -139,6 +196,7 @@ function Trip() {
         breakpoint: 400,
         settings: {
           arrows: false,
+          dots: false,
           slidesToShow: 2.3,
         },
       }
@@ -148,7 +206,7 @@ function Trip() {
   return (
     <section
       id="portfolio"
-      className="bg-light text-dark min-vh-100 d-flex flex-column align-items-center justify-content-center p-3"
+      className="bg-light text-dark min-vh-100 d-flex flex-column align-items-center justify-content-center"
     >
       <div className="container">
       <div className="row w-100 py-5">

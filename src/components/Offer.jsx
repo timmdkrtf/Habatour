@@ -1,5 +1,4 @@
-import FlyerTravelJogja from "../assets/img/flyer/Flyer Ziarah Jogja Al Ihya.png"
-import FlyerTravelKalimantan from "../assets/img/flyer/Flyer Ziarah Kalimantan Selatan.png"
+import FlyerZiarahWali from "../assets/img/flyer/Ziarah Wali dan Keindahan Alam Jawa.png"
 
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -7,52 +6,29 @@ import Modal from 'react-bootstrap/Modal';
 
 function Offer(){
 
-    const [showKalimantan, setShowKalimantan] = useState(false);
-    const [showJogja, setShowJogja] = useState(false);
+    const [showFlyer, setShowFlyer] = useState(false);
 
-    const handleCloseKalimantan = () => setShowKalimantan(false);
-    const handleCloseJogja = () => setShowJogja(false);
-    const handleShowKalimantan = () => setShowKalimantan(true);
-    const handleShowJogja = () => setShowJogja(true);
+    const handleCloseFlyer = () => setShowFlyer(false);
+    const handleShowFlyer = () => setShowFlyer(true);
 
     return(
         <>
-        <Modal show={showKalimantan} onHide={handleCloseKalimantan}>
+        <Modal show={showFlyer} onHide={handleCloseFlyer}>
             <Modal.Header closeButton>
             <Modal.Title>Ziarah Tuan Guru</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <div className="d-flex">
-                    <img src={FlyerTravelKalimantan} alt="" />
+                    <img src={FlyerZiarahWali} alt="" />
                     <div className="text-image">
                         <small>Kuota Terbatas</small>
-                        <h2>Paket Ziarah Kalimantan</h2>
-                        <p>Lakukan perjalanan ziarah penuh makna ke Kalimantan Selatan bareng Ust. Jihad. Hanya dengan Rp. 6.499 juta saja, anda bisa dapat diberikan fasilitas premium yang akan membuat pengalaman ibadah Anda menenangkan, penuh berkah, dan meningkatkan rasa syukur kepada Allah Swt. </p>
+                        <h2>Paket Ziarah Wali dan Keindahan Alam Jawa</h2>
+                        <p>Lakukan perjalanan ziarah sekaligus tadabbur alam dengan penuh makna, bareng Ust. Hisyam dan Ust. Rizki. Hanya dengan Rp. 1.550.000,00 juta saja, anda bisa dapat diberikan fasilitas premium yang akan membuat pengalaman ibadah Anda menenangkan, penuh berkah, dan meningkatkan rasa syukur kepada Allah Swt. </p>
                     </div>
                 </div>
             </Modal.Body>
             <Modal.Footer>
-            <Button variant="secondary" onClick={handleCloseKalimantan}>
-                Tutup
-            </Button>
-            </Modal.Footer>
-        </Modal>
-        <Modal show={showJogja} onHide={handleCloseJogja}>
-            <Modal.Header closeButton>
-            <Modal.Title>Ziarah Bil Barkah</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <div className="d-flex">
-                    <img src={FlyerTravelJogja} alt="" />
-                    <div className="text-image">
-                        <small>Kuota Terbatas</small>
-                        <h2>Paket Ziarah Jogja</h2>
-                        <p>Lakukan perjalanan ziarah penuh makna ke Jogja bareng Ust. Kodir & Ust. Syaeful. Hanya dengan 1.3 juta saja, anda bisa dapat diberikan fasilitas premium yang akan membuat pengalaman ibadah Anda menenangkan, penuh berkah, dan meningkatkan rasa syukur kepada Allah Swt. </p>
-                    </div>
-                </div>
-            </Modal.Body>
-            <Modal.Footer>
-            <Button variant="secondary" onClick={handleCloseJogja}>
+            <Button variant="secondary" onClick={handleCloseFlyer}>
                 Tutup
             </Button>
             </Modal.Footer>
@@ -71,31 +47,15 @@ function Offer(){
                     <div className="popular-offer">
                         <div className="card-offer">
                             <div className="image-container">
-                                <img src={FlyerTravelKalimantan} alt="" />
+                                <img src={FlyerZiarahWali} alt="" />
                                 <div className="overlay">
                                     <div className="text-offer">
                                         <small>Kuota Terbatas</small>
-                                        <h2>Paket Ziarah Kalimantan</h2>
-                                        <p>Lakukan perjalanan ziarah penuh makna, hanya dengan Rp. 6.499.000,00</p>
+                                        <h2>Paket Ziarah Wali dan Keindahan Alam Jawa</h2>
+                                        <p>Hanya Rp. 1.550.000</p>
                                         <div className="d-flex">
-                                            <Button onClick={handleShowKalimantan}>Lihat detail</Button>
+                                            <Button onClick={handleShowFlyer}>Lihat detail</Button>
                                             <a href="https://api.whatsapp.com/send?phone=6283811012385&text=permisi,%20saya%20ingin%20memesan%20Paket%20Ziarah%20Kalimantan" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="card-offer">
-                            <div className="image-container">
-                                <img src={FlyerTravelJogja} alt="" />
-                                <div className="overlay">
-                                    <div className="text-offer">
-                                        <small>Kuota Terbatas</small>
-                                        <h2>Paket Ziarah Jogja</h2>
-                                        <p>Lakukan perjalanan ziarah penuh makna, hanya dengan Rp. 1.300.000,00 saja</p>
-                                        <div className="d-flex">
-                                            <Button onClick={handleShowJogja}>Lihat detail</Button>
-                                            <a href="https://api.whatsapp.com/send?phone=6283811012385&text=permisi,%20saya%20ingin%20memesan%20Paket%20Ziarah%20Jogja" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
                                         </div>
                                     </div>
                                 </div>

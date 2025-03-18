@@ -22,10 +22,10 @@ function Service(){
                         <img src={IGlobe} alt="" />
                         <p>Wisata Religi</p>
                     </div>
-                    <div className="card-layanan">
+                    <a href="#offer" className="card-layanan">
                         <img src={IRamadhan} alt="" />
                         <p>Paket Religi</p>
-                    </div>
+                    </a>
                     <div className="card-layanan">
                         <img src={IBedroom} alt="" />
                         <p>Pemesanan Penginapan</p>

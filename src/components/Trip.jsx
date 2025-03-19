@@ -239,7 +239,7 @@ function Trip() {
               className={activeSlide === 'umroh' ? 'active' : ''}
               onClick={() => setActiveSlide('umroh')}
             >
-              Umroh
+              Umrah
             </button>
           </div>
         </div>

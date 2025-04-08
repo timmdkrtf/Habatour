@@ -1387,5 +1387,9 @@ footer .text-end{
   footer .text-center p{
     font-size: 11px;
   }
+
+  footer .text-end{
+    font-size: 11px;
+  }
   
 }

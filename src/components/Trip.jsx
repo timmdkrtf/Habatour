@@ -204,7 +204,7 @@ function Trip() {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    dots: false,
+    dots: true,
     asNavFor: nav2,
     ref: sliderForRef,
     responsive: [

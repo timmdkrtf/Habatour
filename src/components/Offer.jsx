@@ -62,7 +62,7 @@ function Offer(){
                             </div>
                         </div>
                     </div> */}
-                    <div className="blank" style={{padding:"100px 0", margin:"0 0 100px 0"}}>
+                    <div className="blank" style={{padding:"100px 0", margin:"0 auto 100px auto", textAlign:"center"}}>
                         <h3>Coming Soon</h3>
                     </div>
                 </div>

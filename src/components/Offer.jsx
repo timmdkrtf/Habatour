@@ -44,7 +44,7 @@ function Offer(){
             </div>
             <div className="container">
                 <div className="content">
-                    <div className="popular-offer">
+                    {/* <div className="popular-offer">
                         <div className="card-offer">
                             <div className="image-container">
                                 <img src={FlyerZiarahWali} alt="" />
@@ -61,6 +61,9 @@ function Offer(){
                                 </div>
                             </div>
                         </div>
+                    </div> */}
+                    <div className="blank" style={{padding:"100px 0", margin:"0 0 100px 0"}}>
+                        <h3>Coming Soon</h3>
                     </div>
                 </div>
             </div>

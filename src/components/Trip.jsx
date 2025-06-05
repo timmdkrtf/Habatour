@@ -17,6 +17,14 @@ import ziarahMarhuman2 from "../assets/img/documentation/ziarah-marhuman/MDK0275
 import ziarahMarhuman3 from "../assets/img/documentation/ziarah-marhuman/MDK02781 1.png"
 import ziarahMarhuman4 from "../assets/img/documentation/ziarah-marhuman/MDK02790 1.png"
 
+import ziarahWali1 from "../assets/img/documentation/ziarah-wali-keindahan-alam/doc1.png"
+import ziarahWali2 from "../assets/img/documentation/ziarah-wali-keindahan-alam/doc2.png"
+import ziarahWali3 from "../assets/img/documentation/ziarah-wali-keindahan-alam/doc3.png"
+import ziarahWali4 from "../assets/img/documentation/ziarah-wali-keindahan-alam/doc4.png"
+import ziarahWali5 from "../assets/img/documentation/ziarah-wali-keindahan-alam/doc5.png"
+import ziarahWali6 from "../assets/img/documentation/ziarah-wali-keindahan-alam/doc6.png"
+import ziarahWali7 from "../assets/img/documentation/ziarah-wali-keindahan-alam/doc7.png"
+
 import umroh1 from "../assets/img/documentation/umroh/makkah1.png"
 import umroh2 from "../assets/img/documentation/umroh/makkah2.png"
 import umroh3 from "../assets/img/documentation/umroh/shalat.png"
@@ -24,8 +32,6 @@ import umroh4 from "../assets/img/documentation/umroh/trip-umroh1.png"
 import umroh5 from "../assets/img/documentation/umroh/trip-umroh2.png"
 import umroh6 from "../assets/img/documentation/umroh/umroh-foto.png"
 
-import elemenTriangleGreen from "../assets/img/elemen/triangle-green-left.png"
-import elemenTriangleOrange from "../assets/img/elemen/triangle-orange-left.png"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -123,6 +129,41 @@ function Trip() {
         img: ziarahMarhuman4,
         desc: "Yogyakarta - Magelang (24-26 Januari 2025)"
       },
+      {
+        mainTitle: "Ziarah Wali dan Keindahan Alam Jawa",
+        img: ziarahWali1,
+        desc: "Pemalang-Magelang-Yogyakarta (22-24 Mei 2025)"
+      },
+      {
+        mainTitle: "Ziarah Wali dan Keindahan Alam Jawa",
+        img: ziarahWali2,
+        desc: "Pemalang-Magelang-Yogyakarta (22-24 Mei 2025)"
+      },
+      {
+        mainTitle: "Ziarah Wali dan Keindahan Alam Jawa",
+        img: ziarahWali3,
+        desc: "Pemalang-Magelang-Yogyakarta (22-24 Mei 2025)"
+      },
+      {
+        mainTitle: "Ziarah Wali dan Keindahan Alam Jawa",
+        img: ziarahWali4,
+        desc: "Pemalang-Magelang-Yogyakarta (22-24 Mei 2025)"
+      },
+      {
+        mainTitle: "Ziarah Wali dan Keindahan Alam Jawa",
+        img: ziarahWali5,
+        desc: "Pemalang-Magelang-Yogyakarta (22-24 Mei 2025)"
+      },
+      {
+        mainTitle: "Ziarah Wali dan Keindahan Alam Jawa",
+        img: ziarahWali6,
+        desc: "Pemalang-Magelang-Yogyakarta (22-24 Mei 2025)"
+      },
+      {
+        mainTitle: "Ziarah Wali dan Keindahan Alam Jawa",
+        img: ziarahWali7,
+        desc: "Pemalang-Magelang-Yogyakarta (22-24 Mei 2025)"
+      }
     ],
     'umroh':[
       {
@@ -163,7 +204,7 @@ function Trip() {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    dots: true,
+    dots: false,
     asNavFor: nav2,
     ref: sliderForRef,
     responsive: [

@@ -55,7 +55,7 @@ function Offer(){
                                         <p>Hanya Rp550.000</p>
                                         <div className="d-flex">
                                             <Button onClick={handleShowFlyer}>Lihat detail</Button>
-                                            <a href="https://api.whatsapp.com/send?phone=6283811012385&text=permisi,%20saya%20ingin%20memesan%20Paket%20Ziarah%20Kalimantan" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
+                                            <a href="https://api.whatsapp.com/send?phone=6283811012385&text=permisi,%20saya%20ingin%20memesan%20Paket%20Ziarah%20Wali%20Garut" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
                                         </div>
                                     </div>
                                 </div>

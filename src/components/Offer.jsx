@@ -1,4 +1,4 @@
-import FlyerZiarahWali from "../assets/img/flyer/Ziarah Wali dan Keindahan Alam Jawa.png"
+import FlyerZiarahWali from "../assets/img/flyer/Ziarah Wali Garut.png"
 
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -22,8 +22,8 @@ function Offer(){
                     <img src={FlyerZiarahWali} alt="" />
                     <div className="text-image">
                         <small>Kuota Terbatas</small>
-                        <h2>Paket Ziarah Wali dan Keindahan Alam Jawa</h2>
-                        <p>Lakukan perjalanan ziarah sekaligus tadabbur alam dengan penuh makna, bareng Ust. Hisyam dan Ust. Rizki. Hanya dengan Rp. 1.550.000,00 juta saja, anda bisa dapat diberikan fasilitas premium yang akan membuat pengalaman ibadah Anda menenangkan, penuh berkah, dan meningkatkan rasa syukur kepada Allah Swt. </p>
+                        <h2>Paket Ziarah Wali Garut</h2>
+                        <p>Lakukan perjalanan ziarah wali di bumi pasundan, Garut, bareng Ust. Hisyam dan Ust. Irfan. Hanya dengan Rp550.000,00 saja, anda bisa dapat diberikan fasilitas premium yang akan membuat pengalaman ibadah Anda menenangkan, penuh berkah, dan meningkatkan rasa syukur kepada Allah Swt. </p>
                     </div>
                 </div>
             </Modal.Body>
@@ -44,15 +44,15 @@ function Offer(){
             </div>
             <div className="container">
                 <div className="content">
-                    {/* <div className="popular-offer">
+                    <div className="popular-offer">
                         <div className="card-offer">
                             <div className="image-container">
                                 <img src={FlyerZiarahWali} alt="" />
                                 <div className="overlay">
                                     <div className="text-offer">
                                         <small>Kuota Terbatas</small>
-                                        <h2>Paket Ziarah Wali dan Keindahan Alam Jawa</h2>
-                                        <p>Hanya Rp. 1.550.000</p>
+                                        <h2>Paket Ziarah Wali Garut</h2>
+                                        <p>Hanya Rp550.000</p>
                                         <div className="d-flex">
                                             <Button onClick={handleShowFlyer}>Lihat detail</Button>
                                             <a href="https://api.whatsapp.com/send?phone=6283811012385&text=permisi,%20saya%20ingin%20memesan%20Paket%20Ziarah%20Kalimantan" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
@@ -61,10 +61,10 @@ function Offer(){
                                 </div>
                             </div>
                         </div>
-                    </div> */}
-                    <div className="blank" style={{padding:"100px 0", margin:"0 auto 100px auto", textAlign:"center"}}>
-                        <h3>Coming Soon</h3>
                     </div>
+                    {/* <div className="blank" style={{padding:"100px 0", margin:"0 auto 100px auto", textAlign:"center"}}>
+                        <h3>Coming Soon</h3>
+                    </div> */}
                 </div>
             </div>
         </div>

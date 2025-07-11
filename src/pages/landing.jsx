@@ -5,6 +5,7 @@ import Service from '../components/Service'
 import Offer from '../components/Offer'
 import Trip from '../components/Trip'
 import Clients from '../components/Clients'
+import Testimoni from '../components/Testimoni'
 import Footer from "../components/Footer"
 
 export default function Landing(){
@@ -17,6 +18,7 @@ export default function Landing(){
             <Offer />
             <Trip />
             <Clients />
+            <Testimoni />
             <Footer />
         </div>
     );

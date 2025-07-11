@@ -603,7 +603,7 @@ transition-property: width, left;
   width: 60%;
   margin-top: 80px !important;
   margin-bottom: 80px !important;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .partners .elemen-triangle img{
@@ -612,7 +612,7 @@ transition-property: width, left;
   position: absolute;
   left: 0;
   margin: 0 0 0 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 .realtour img{
@@ -753,6 +753,88 @@ transition-property: width, left;
   color: #FFFFFF;
   border-radius: 10px;
   padding: 2px 7px;
+}
+
+.testimoni{
+ background-image: url('../src/assets/img/masjid.png');
+ background-size: cover;
+ position: relative;
+ height: auto;
+ padding: 100px 0 80px 0;
+}
+
+.testimoni::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-image: url('../src/assets/img/elemen-bg.png');
+  bottom: 0;
+}
+
+.testimoni .container{
+  display: flex;
+  width: 100%;
+  height: 100% ;
+  z-index: 0;
+}
+
+.testimoni .content-flex{
+  background-color: rgba(237, 237, 237, 0.9);
+  height: 100%;
+  width: 100%;
+  border-radius: 60px;
+  padding: 10px 50px 100px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.testimoni .content-flex .title h4{
+  background-color: #4B8378;
+  color: #ffffff;
+  width: fit-content;
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin: 0 auto;
+  transform: translateY(-40px);
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 4px 0 0 #FF9636;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimoni .content-flex .content-quote{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 40px;
+}
+
+.testimoni .content-flex .content-quote .testi{
+  width: calc(50% - 20px);
+  background-color: #FFFFFF;
+  padding: 30px 50px;
+  border-radius:100px;
+}
+
+.testimoni .content-flex .content-quote .testi.a{
+  /* background-color: #4B8378; */
+  box-shadow: 0 5px 0 0 #FF9636;
+}
+
+.testimoni .content-flex .content-quote .testi.b{
+  /* background-color: #FF9636; */
+    box-shadow: 0 5px 0 0 #4B8378;
+}
+
+.testimoni .content-flex .content-quote .testi p{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
 }
 
 footer{
@@ -1075,6 +1157,10 @@ footer .text-end{
     justify-content: center; /* Pusatkan konten dalam slide */
   }
 
+  .testimoni .content-flex .content-quote .testi{
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1273,6 +1359,29 @@ footer .text-end{
   object-fit: contain;
   margin-top: 7px;
 }
+
+.testimoni .content-flex{
+  border-radius: 0px;
+}
+
+.testimoni .container{
+  padding: 0;
+}
+
+.testimoni .content-flex{
+  padding: 10px 10px 100px 10px;
+}
+
+.testimoni .content-flex .content-quote{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.testimoni .content-flex .content-quote .testi p{
+  font-size: 13px;
+}
   
 }
 
@@ -1386,6 +1495,17 @@ footer .text-end{
   }
 .realtour img{
   margin-top: -3px !important;
+}
+
+.testimoni .content-flex{
+  gap: 0;
+}
+
+.testimoni .content-flex .content-quote .testi{
+
+  padding: 25px;
+  border-radius: 50px;
+  background-color: transparent;
 }
 
   footer .text-center p{

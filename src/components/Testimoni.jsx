@@ -1,7 +1,20 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { responsivePropType } from "react-bootstrap/esm/createUtilityClasses";
+
+// const NextArrow = ({ onClick }) => (
+//   <button className="slick-next" onClick={onClick} aria-label="Next">
+//     <span className="carousel-control-next-icon" aria-hidden="true" />
+//   </button>
+// );
+
+// const PrevArrow = ({ onClick }) => (
+//   <button className="slick-prev" onClick={onClick} aria-label="Previous">
+//     <span className="carousel-control-prev-icon" aria-hidden="true" />
+//   </button>
+// );
 
 export default function Testimoni() {
   const settings = {
@@ -13,21 +26,39 @@ export default function Testimoni() {
     autoplaySpeed: 3000,
     slidesToShow: 2,
     slidesToScroll: 1,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const testimonials = [
     {
       id: 1,
-      text: `Kegiatan sholat berjamaah wajib dan sunahny (buat sy ini sprti miniatur umroh) MaasyaaAllaah. do'akan sy dpt ikut kmbali dlm kegiatan yg diadakan tim ASW hingga Allaah panggil utk Umroh bahkan Haji 🤲🤲....Aamiin ya Allaah`
+      text: `Kegiatan sholat berjamaah wajib dan sunahny (buat sy ini sprti miniatur umroh) MaasyaaAllaah. do'akan sy dpt ikut kmbali dlm kegiatan yg diadakan tim ASW hingga Allaah panggil utk Umroh bahkan Haji 🤲🤲....Aamiin ya Allaah`,
     },
     {
       id: 2,
-      text: `Habatour harus tetap mengutamakan kenyamanan jamaah baik alat transportasi, hotel dan makanan. Terima kasih Habatour, sukses selalu dan semakin banyak jamaah yang puas dengan pelayanannya. Berkah..berkah..berkah...`
+      text: `Habatour harus tetap mengutamakan kenyamanan jamaah baik alat transportasi, hotel dan makanan. Terima kasih Habatour, sukses selalu dan semakin banyak jamaah yang puas dengan pelayanannya. Berkah..berkah..berkah...`,
     },
     {
       id: 3,
-      text: `Alhamdulillah bagus .mudah2an kedepannya lebih bagus lagi`
-    }
+      text: `Alhamdulillah bagus .mudah2an kedepannya lebih bagus lagi`,
+    },
   ];
 
   return (

@@ -805,28 +805,23 @@ transition-property: width, left;
   font-family: "Poppins", sans-serif;
 }
 
-.testimoni .content-flex .content-quote{
+
+.testimoni .content-flex .content-quote .slick-track{
+  padding: 0 0 50px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 50px 40px;
+  align-items: center;
+}
+
+.testimoni .content-flex .content-quote .slick-track .slick-slide{
+  padding: 0 20px;
 }
 
 .testimoni .content-flex .content-quote .testi{
-  width: calc(50% - 20px);
   background-color: #FFFFFF;
   padding: 30px 50px;
   border-radius:100px;
-}
-
-.testimoni .content-flex .content-quote .testi.a{
-  /* background-color: #4B8378; */
   box-shadow: 0 5px 0 0 #FF9636;
-}
-
-.testimoni .content-flex .content-quote .testi.b{
-  /* background-color: #FF9636; */
-    box-shadow: 0 5px 0 0 #4B8378;
 }
 
 .testimoni .content-flex .content-quote .testi p{

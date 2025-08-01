@@ -24,18 +24,7 @@ export default function Home(){
     }, []);
 
     return(
-    <div id="home" className="home">
-      {/* Background Image Layer */}
-      <img
-        src={images[currentImage]}
-        alt="background"
-        className={`background-image ${fade ? "fade-out" : "fade-in"}`}
-      />
-
-      {/* Overlay */}
-      <div className="overlay" />
-
-      {/* Content */}
+        <div id="home" className={`home ${fade ? "fade-out" : "fade-in"}`} style={{ backgroundImage: `url(${images[currentImage]})` }}>
             <div className="container">
                 <div className="row">
                     <div className="content">

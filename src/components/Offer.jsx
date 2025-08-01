@@ -19,7 +19,7 @@ function Offer(){
             </Modal.Header>
             <Modal.Body>
                 <div className="d-flex">
-                    <img src={FlyerZiarahWali} alt="" />
+                    <img src={FlyerZiarahWali} alt="" loading="lazy" />
                     <div className="text-image">
                         <small>Kuota Terbatas</small>
                         <h2>Paket Ziarah Wali Garut</h2>
@@ -47,7 +47,7 @@ function Offer(){
                     <div className="popular-offer">
                         <div className="card-offer">
                             <div className="image-container">
-                                <img src={FlyerZiarahWali} alt="" />
+                                <img src={FlyerZiarahWali} alt="" loading="lazy" />
                                 <div className="overlay">
                                     <div className="text-offer">
                                         <small>Kuota Terbatas</small>

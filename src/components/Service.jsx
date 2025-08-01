@@ -15,27 +15,27 @@ function Service(){
                 </div>
                 <div className="daftar-layanan">
                     <div className="card-layanan">
-                        <img src={ITranport} alt="" />
+                        <img src={ITranport} alt="" loading="lazy"/>
                         <p>Transportasi</p>
                     </div>
                     <div className="card-layanan">
-                        <img src={IGlobe} alt="" />
+                        <img src={IGlobe} alt="" loading="lazy"/>
                         <p>Wisata Religi</p>
                     </div>
                     <a href="#offer" className="card-layanan">
-                        <img src={IRamadhan} alt="" />
+                        <img src={IRamadhan} alt="" loading="lazy"/>
                         <p>Paket Religi</p>
                     </a>
                     <div className="card-layanan">
-                        <img src={IBedroom} alt="" />
+                        <img src={IBedroom} alt="" loading="lazy"/>
                         <p>Pemesanan Penginapan</p>
                     </div>
                     <div className="card-layanan">
-                        <img src={IMosque} alt="" />
+                        <img src={IMosque} alt="" loading="lazy"/>
                         <p>Pemahaman Objek Religi</p>
                     </div>
                     <div className="card-layanan">
-                        <img src={IView} alt="" />
+                        <img src={IView} alt="" loading="lazy"/>
                         <p>Tadabbur Alam</p>
                     </div>
                 </div>

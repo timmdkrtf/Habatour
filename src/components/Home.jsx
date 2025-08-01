@@ -1,19 +1,40 @@
+import { useState, useEffect } from "react";
 
-function Home(){
+import view1 from "../assets/img/MDK01340.jpg"
+import view2 from "../assets/img/MDK01541.jpg"
+import view3 from "../assets/img/MDK09126.jpg"
+import view4 from "../assets/img/MDK09166-Enhanced-NR.jpg"
+const images = [view3, view4, view1, view2];
+
+export default function Home(){
+
+    const [currentImage, setCurrentImage] = useState(0);
+    const [fade, setFade] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFade(true); 
+            setTimeout(() => {
+                setCurrentImage((prev) => (prev + 1) % images.length);
+                setFade(false);
+            }, 300); 
+        }, 6000); 
+
+        return () => clearInterval(interval);
+    }, []);
+
     return(
-        <div className="home" id="home">
+        <div id="home" className={`home ${fade ? "fade-out" : "fade-in"}`} style={{ backgroundImage: `url(${images[currentImage]})` }}>
             <div className="container">
-                <div className="content">
-                    <div className="content-text">
-                        <h1>Berkomitmen Menyediakan Fasilitas <span>Ibadah Premium</span> untuk Anda</h1>
-                        <p>Tingkatkan kualitas ibadahmu dengan fasilitas premium kami yang akan membuat pengalaman ibadah Anda lebih tertata, menenangkan, penuh berkah, dan meningkatkan rasa syukur kepada Allah Swt.</p>
-                        <a href="#about"><button>Baca Selengkapnya</button></a>
+                <div className="row">
+                    <div className="content">
+                        <h1>
+                            Jelajahi Wisata dengan Sentuhan Keindahan Islami
+                        </h1>
+                            <button className="btn explore">Jelajahi Sekarang</button>
                     </div>
-
                 </div>
             </div>
         </div>
     );
 }
-
-export default Home;

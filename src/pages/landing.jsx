@@ -6,6 +6,7 @@ import Offer from '../components/Offer'
 import Trip from '../components/Trip'
 import Clients from '../components/Clients'
 import Testimoni from '../components/Testimoni'
+import BtnFloat from "../components/BtnFloat"
 import Footer from "../components/Footer"
 
 export default function Landing(){
@@ -19,6 +20,7 @@ export default function Landing(){
             <Trip />
             <Clients />
             <Testimoni />
+            <BtnFloat />
             <Footer />
         </div>
     );

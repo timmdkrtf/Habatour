@@ -408,10 +408,11 @@ body {
   flex-wrap: wrap;
   margin: 60px 0;
   justify-content: center;
+  gap: 30px;
 }
 
 .offer .content .popular-offer .card-offer{
-  width: 40%;
+  width: calc(33% - 20px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -427,7 +428,7 @@ body {
 
  .offer .content .popular-offer .card-offer .image-container {
   position: relative;
-  width: 80% !important;
+  width: 100% !important;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -528,12 +529,8 @@ body {
 }
 
 .modal-body .d-flex img{
-  width: 40%;
+  width: 100%;
   border-radius: 5px;
-}
-
-.modal-body .d-flex .text-image{
-  width: 55%;
 }
 
 #portfolio h2.fw-bold{

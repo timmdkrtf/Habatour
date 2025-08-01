@@ -1,4 +1,4 @@
-import FlyerZiarahWali from "../assets/img/flyer/Ziarah Wali Garut.png"
+import FlyerZiarahTuanGuru from "../assets/img/flyer/Ziarah-tuan-guru.jpeg"
 
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -19,12 +19,7 @@ function Offer(){
             </Modal.Header>
             <Modal.Body>
                 <div className="d-flex">
-                    <img src={FlyerZiarahWali} alt="" loading="lazy" />
-                    <div className="text-image">
-                        <small>Kuota Terbatas</small>
-                        <h2>Paket Ziarah Wali Garut</h2>
-                        <p>Lakukan perjalanan ziarah wali di bumi pasundan, Garut, bareng Ust. Hisyam dan Ust. Irfan. Hanya dengan Rp550.000,00 saja, anda bisa dapat diberikan fasilitas premium yang akan membuat pengalaman ibadah Anda menenangkan, penuh berkah, dan meningkatkan rasa syukur kepada Allah Swt. </p>
-                    </div>
+                    <img src={FlyerZiarahTuanGuru} alt="" loading="lazy" />
                 </div>
             </Modal.Body>
             <Modal.Footer>
@@ -47,15 +42,15 @@ function Offer(){
                     <div className="popular-offer">
                         <div className="card-offer">
                             <div className="image-container">
-                                <img src={FlyerZiarahWali} alt="" loading="lazy" />
+                                <img src={FlyerZiarahTuanGuru} alt="" loading="lazy" />
                                 <div className="overlay">
                                     <div className="text-offer">
                                         <small>Kuota Terbatas</small>
-                                        <h2>Paket Ziarah Wali Garut</h2>
-                                        <p>Hanya Rp550.000</p>
+                                        <h2>Paket Ziarah Tuan Guru</h2>
+                                        <p>Hanya 6,7 juta</p>
                                         <div className="d-flex">
                                             <Button onClick={handleShowFlyer}>Lihat detail</Button>
-                                            <a href="https://api.whatsapp.com/send?phone=6283811012385&text=permisi,%20saya%20ingin%20memesan%20Paket%20Ziarah%20Wali%20Garut" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
+                                            <a href="https://api.whatsapp.com/send?phone=6283811012385&text=permisi,%20saya%20tertarik%20dengan%20Paket%20Ziarah%20Tuan%20Guru" style={{color:"white", textDecoration:"none"}} target="_blank">Contact Us</a>
                                         </div>
                                     </div>
                                 </div>

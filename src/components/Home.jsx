@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import view1 from "../assets/img/MDK01340.jpg"
 import view2 from "../assets/img/MDK01541.jpg"
 import view3 from "../assets/img/MDK09126.jpg"
-import view4 from "../assets/img/MDK09166-Enhanced-NR.jpg"
+import view4 from "../assets/img/MDK09166.jpg"
 const images = [view3, view4, view1, view2];
 
 export default function Home(){
@@ -31,7 +31,7 @@ export default function Home(){
                         <h1>
                             Jelajahi Wisata dengan Sentuhan Keindahan Islami
                         </h1>
-                            <button className="btn explore">Jelajahi Sekarang</button>
+                            <a className="btn explore" href="#about">Jelajahi Sekarang</a>
                     </div>
                 </div>
             </div>
